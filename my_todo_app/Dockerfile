@@ -7,5 +7,5 @@ COPY requirements.txt .
 # RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
+CMD python3 manage.py runserver
 # CMD ["python", "manage.py", "runserver", "167.71.55.139:8000"]
